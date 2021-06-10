@@ -1754,10 +1754,10 @@ a .services__text{
 }
 
 @media (max-width: 767.98px) {
-		.popup__content {
+	.popup__content {
 		max-width: 420px;
 		width: 420px;
-		margin: 30px 0;
+		margin: 50px 0;
 	}
 	.use__item {
 		flex:  0 0 50%;
@@ -1799,7 +1799,7 @@ a .services__text{
 	.popup__content {
 		max-width: 90%;
 		width: 90%;
-		margin: 30px 0;
+		margin: 60px 0;
 	}
 
 	.popup__title {
