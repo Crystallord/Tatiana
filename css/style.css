@@ -122,14 +122,14 @@ body.lock {
 .header__list li {
 	height: 30px;
 	padding: 6px 5px;
-	transition-duration: 500ms;
-	border-radius: 10px;
+	transition-duration: 100ms;
 }
 
 
 .header__list li:hover {
 	border: 2px solid white transparent;
-	background-color: #df7a92;
+	background-color: #FFB6C1;
+	border-radius: 10px;
 }
 
 .header__link {
@@ -320,25 +320,26 @@ h2{
 
 .hi-block__button-block {
 	margin: 0 auto;
-	width: 250px;
+	text-align: center;
+	width: 500px;
 }
 
 .hi-block__button {
 	font-size: 18px;
-	width: 250px;
-	height: 50px;
+	width: 275px;
+	height: 60px;
 	background-color: #fdeffa;
 	text-align: center;
 	padding: 12.5px 0;
 	transition-duration: 500ms;
-	border:  1px solid #7c7b89;
+	border:  2px solid #7c7b89;
 	margin-bottom: 50px;
+	border-radius: 25px;
 }
 
 .hi-block__button:hover {
-	background-color: #df7a92;
-	color: white;
-	box-shadow: 0 0 10px #df7a92;
+	background-color: #FFB6C1;
+	transform: translate(0,-5px);
 }
 
 @media (max-width: 1182px) {
@@ -709,6 +710,7 @@ a .services__text{
 	margin-bottom:  30px;
 	box-shadow: 0 0 5px rgba(124, 123, 137, 0.5);
 	margin-bottom: 50px;
+	border-radius: 25px;
 }
 
 .table__title-box {
@@ -767,12 +769,12 @@ a .services__text{
 	background-color: #fdeffa;
 	transition-duration: 500ms;
 	border: 1px solid rgba(124, 123, 137, 0.8);
+	border-radius: 25px;
 }
 
 .table__button:hover {
-	color:  white;
-	background-color: #df7a92;
-	box-shadow: 0px 0px 10px #df7a92;
+	background-color: #FFB6C1;
+	transform: translate(0,-5px);
 }
 
 @media (max-width: 992px) {
@@ -1287,9 +1289,8 @@ a .services__text{
 }
 
 .examples__button:hover{
-	color:  white;
-	background-color: #df7a92;
-	box-shadow: 0px 0px 10px #df7a92;
+	background-color: #FFB6C1;
+	transform: translate(0,-5px);
 }
 .remove-button{
 	display: none;
@@ -1424,12 +1425,12 @@ a .services__text{
 	transition-duration: 500ms;
 	border: 1px solid rgba(124, 123, 137, 0.8);
 	margin-bottom: 25px;
+	border-radius: 25px;
 }
 
 .singup__online-button:hover{
-	color:  white;
-	background-color: #df7a92;
-	box-shadow: 0px 0px 10px #df7a92;
+	background-color: #FFB6C1;
+	transform: translate(0,-5px);
 }
 
 .singup__online-link{
@@ -1527,7 +1528,6 @@ a .services__text{
 /* popups
 =======================================*/
 
-
 .popup {
 	position: fixed;
 	width: 100%;
@@ -1541,7 +1541,7 @@ a .services__text{
 	overflow-x: hidden;
 	transition: all 0.3s ease 0s;
 	line-height: 18px;
-	/*font-family: 'Roboto Slab';*/
+	z-index: 5;
 }
 .popup.open {
 	opacity: 1;
@@ -1558,6 +1558,7 @@ a .services__text{
 	height: 100%;
 	top: 0;
 	left: 0;
+
 }
 
 .popup__body {
@@ -1577,17 +1578,22 @@ a .services__text{
 	position: relative;
 	transition: all 0.8s ease 0s;
 	opacity: 0;
+	border-radius: 25px;
+	overflow: hidden;
 	transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 }
 
 
 .popup__close {
 	position: absolute;
+	height: 15px;
 	right: 10px;
 	top: 10px;
 	font-size: 20px;
 	color: #000;
 	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+
 }
 
 .popup__title {
@@ -1616,11 +1622,15 @@ a .services__text{
 }
 
 .use__item {
-	flex:  0 0 33.333%;
+	flex:  1 1 33.333%;
 	text-align: left;
 	padding-left: 80px;
 	margin-bottom: 50px;
 	position: relative;
+}
+
+.holiday__one-text{
+	text-align: center;
 }
 
 .use__text {}
@@ -1633,6 +1643,11 @@ a .services__text{
 	top: -5px;
 	left: 40px;
 	text-align: center;
+}
+
+.holiday__text-one{
+	text-align: center;
+	font-size: 22px;
 }
 
 .popup__procedure-block {}
@@ -1709,7 +1724,7 @@ a .services__text{
 	}
 
 	.use__item {
-		flex:  0 0 33.333%;
+		flex:  1 1 33.333%;
 		text-align: left;
 		padding-left: 50px;
 		margin-bottom: 20px;
@@ -1760,7 +1775,7 @@ a .services__text{
 		margin: 50px 0;
 	}
 	.use__item {
-		flex:  0 0 50%;
+		flex:  1 1 50%;
 	}
 
 	.use__item .fas:before{
@@ -1812,7 +1827,7 @@ a .services__text{
 	}
 
 	.use__item {
-		flex:  0 0 100%;
+		flex:  1 1 100%;
 		text-align: left;
 		padding-left: 30px;
 		margin-bottom: 20px;
@@ -1858,5 +1873,13 @@ a .services__text{
 		font-size: 13.5px;
 		text-align: left;
 	}
+}
 
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    background-color: orange;
+    width: 100%;
+    text-align: center;
 }
